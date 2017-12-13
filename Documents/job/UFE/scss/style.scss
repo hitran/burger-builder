@@ -1,0 +1,296 @@
+@import "variables";
+@import "mixins";
+@import "placeholders";
+@import "layout";
+
+/* Header top*/
+.header-top {
+  @include general-style(transparent, $green);
+  margin-top: 20px;
+
+  .row {
+    @extend %flex-center;
+  }
+
+  .page-title {
+    text-align: center;
+    padding-right: 42px;
+  }
+
+  .logo-wrapper {
+    padding-left: 25px;
+  }
+}
+
+/* Header bottom - Menu */
+.navbar-default {
+  @extend %transparent;
+  margin-top: 20px;
+  font-size: 14px;
+
+  li {
+    border-right: 1px solid $green;
+    &:last-child {
+      border-right: none;
+    }
+    a {
+      @include space(4px, 10px);
+    }
+  }
+  .navbar-nav > .active > a {
+    @include general-style(transparent, $green);
+  }
+}
+
+.navbar-collapse {
+  padding: 0;
+}
+
+/* Overall conclusion */
+.overall-conclusion-row {
+  @extend %flex-center;
+  height: 198px;
+
+  .column-left {
+    @extend %flex-center;
+    img {
+      @include position(relative, 0, 0, 0, -6px);
+      height: 35px;
+      padding-right: 10px;
+    }
+  }
+
+  .column-right {
+    font-size: 18px;
+    padding-right: 40px;
+  }
+}
+
+/* Fact green */
+.fact-green {
+  .column-right {
+    h2 {
+      margin-bottom: 20px;
+    }
+  }
+  .column-left {
+    @include position(relative, -55px);
+  }
+
+  .top-side-banner {
+    width: 100%;
+  }
+
+  .one-transition, .one-role {
+    min-height: 333px;
+  }
+
+  .graph, .one-transition, .one-role {
+    padding: 33px;
+  }
+
+  .graph {
+    border-right: 1px solid $green;
+    text-align: center;
+    img {
+      width: 100%;
+    }
+    h5 {
+      margin-bottom: 33px;
+    }
+  }
+
+  .one-transition {
+    h3 {
+      margin-bottom: 33px;
+    }
+  }
+
+  .one-role {
+    h3 {
+      margin-top: 33px;
+    }
+  }
+
+  .content-wrapper {
+    @extend %flex-center;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+/* Fact Blue */
+.fact-blue {
+  .row1{
+    overflow: hidden;
+    .col-md-8{
+      padding-right: 0;
+    }
+    .col-md-4{
+      padding-left: 0;
+    }
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .play-button{
+    @include position(relative, -45px);
+  }
+
+  .top-side-banner{
+    img{
+      min-height: 324.10px;
+      @include position(relative, -0.9px);
+    }
+  }
+
+  .seventy-five-percent-fact{
+    padding: 45px;
+    p{
+      padding-bottom: 5px;
+    }
+  }
+
+  .arrow-percent{
+    position: relative;
+    margin-bottom: 25px;
+
+    .percentage{
+      position: absolute;
+      top: 15px;
+      left: 10px;
+      transform: rotate(45deg);
+      font-size: 19px;
+      font-weight: bold;
+    }
+  }
+
+  .industry-contribution{
+    padding: 30px;
+    text-align: center;
+    border-right: 1px solid $blue;
+    h5{
+      padding-bottom: 20px;
+    }
+  }
+
+  .chart-description{
+    display: flex;
+  }
+  .column-right{
+    margin-left: 70px;
+    margin-top: 5px;
+    margin-right: 10px;
+    text-align: left;
+    p{
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.specific-action{
+  margin-top: 30px;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+
+  p{
+    padding-top: 10px;
+    padding-bottom: 0;
+  }
+
+  .column-left, .column-right{
+    flex: 1;
+  }
+
+  .column-top{
+    padding: 5px;
+    margin: 0;
+    display: flex;
+  }
+
+  .column-bottom{
+    padding: 5px;
+    display: flex;
+  }
+
+  h5::before{
+    content: "> ";
+    font-weight: normal;
+    line-height: 30px;
+  }
+}
+/* Fact Marble*/
+.fact-marble{
+  .conclusion{
+    align-items: flex-end;
+  }
+
+  .column-left{
+    margin-top: 50px;
+    align-self: flex-start;
+  }
+
+  .column-right{
+    h2{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* Fact Sky Blue */
+.fact-sky-blue{
+  .conclusion{
+    align-items: flex-start;
+    padding-top: 70px;
+  }
+
+  .column-right{
+    h3{
+      margin-bottom: 30px;
+    }
+  }
+}
+
+/* Fact Orange */
+.fact-orange{
+  .conclusion{
+    position: relative;
+  }
+  .leaf{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+}
+
+
+/* Footer */
+footer {
+  color: $gray;
+  .fa {
+    border: 1px solid $gray;
+    font-size: 25px;
+    @include space(10px, 10px, 20px, 10px);
+  }
+}
+
+.contact {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mention, .email {
+  text-align: center;
+  padding-right: 10px;
+}
+
+
+
+
+
+
+
+
