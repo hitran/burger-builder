@@ -278,24 +278,22 @@
   flex-direction: column;
   padding: 33px 0;
   border-right: 1px solid $blue;
-
-  .chart{
+  .chart {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     width: 98%;
-    p{
+    p {
       padding-bottom: 0;
       padding-top: 10px;
     }
-    .column-right{
+    .column-right {
       margin: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
-    .column-left{
+    .column-left {
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -303,35 +301,33 @@
   }
 }
 
-.ten-actions-diagram{
+.ten-actions-diagram {
   text-align: center;
   padding: 10px 30px;
-  h5{
+  h5 {
     padding-bottom: 20px;
   }
-
-  img{
+  img {
     width: 100%;
   }
 }
 
-.fact-blue{
-  .bottom-side-banner{
+.fact-blue {
+  .bottom-side-banner {
     position: relative;
-    img{
+    img {
       width: 100%;
     }
-
-    .description{
+    .description {
       position: absolute;
       bottom: 0;
       text-align: center;
       width: 100%;
-      h3{
+      h3 {
         font-size: 40px;
         color: $blue;
       }
-      p{
+      p {
         padding-bottom: 10px;
       }
     }
@@ -343,16 +339,75 @@
   .conclusion {
     align-items: flex-end;
   }
-
   .column-left {
     margin-top: 50px;
     align-self: flex-start;
   }
-
   .column-right {
     h2 {
       margin-bottom: 30px;
     }
+  }
+}
+
+.analysis-fact {
+  border-left: 1px solid $marble;
+  .analysis-title {
+    padding: 30px;
+  }
+  .paddy-field {
+    width: 100%;
+  }
+  .image {
+    position: relative;
+  }
+  .increase-triangle {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+  }
+  .analysis-description {
+    padding: 30px;
+    height: 323px;
+  }
+}
+
+.money-saving-fact {
+  padding: 30px 50px;
+  border: 2px solid white;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  h3 {
+    padding-bottom: 20px;
+  }
+}
+
+.triangle-chart {
+  padding: 30px;
+  text-align: center;
+  h5 {
+    padding-bottom: 29px;
+  }
+}
+
+.CO2-emission-fact {
+  padding: 30px 35px;
+  border-right: 1px solid $marble;
+  height: 719px;
+
+  img {
+    width: 100%;
+  }
+  h3, h5 {
+    padding-bottom: 30px;
+  }
+
+  h5 {
+    text-align: center;
+  }
+
+  p {
+    padding-top: 30px;
   }
 }
 
@@ -362,11 +417,127 @@
     align-items: flex-start;
     padding-top: 70px;
   }
-
   .column-right {
     h3 {
       margin-bottom: 30px;
     }
+  }
+  .top-side-banner {
+    border-right: 1px solid $sky-blue;
+  }
+}
+
+.CO2-and-climate {
+  padding: 25px;
+  height: 333px;
+  h3 {
+    padding: 0 25px;
+  }
+  .border-radius-top, .border-radius-bottom {
+    position: relative;
+  }
+  .border-radius-top {
+    top: 10px;
+  }
+  .border-radius-bottom {
+    bottom: 10px;
+  }
+}
+
+.climate-evolution-chart {
+  height: 333px;
+  text-align: center;
+  border-right: 1px solid $sky-blue;
+  padding: 30px;
+  h5 {
+    padding-bottom: 15px;
+  }
+}
+
+.energy-impact-chart {
+  border-left: 1px solid $sky-blue;
+  height: 333px;
+  text-align: center;
+  padding: 30px;
+  img {
+    width: 100%;
+  }
+  h5 {
+    padding-bottom: 20px;
+  }
+}
+
+.prediction {
+  position: relative;
+  padding: 15px;
+  height: 333px;
+  .triangle-bottom {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+  }
+  p {
+    padding: 5px 20px;
+  }
+}
+
+.fact-sky-blue {
+  .middle-side-banner{
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    img{
+      width: 100%;
+      position: relative;
+      top: -60px;
+    }
+    h3{
+      position: absolute;
+      top: 30px;
+      text-align: center;
+      width: 40%;
+      left: 50%;
+      transform: translateX(-50%);
+
+    }
+  }
+}
+
+.electric-car-impact-chart{
+  height: 333px;
+  padding: 30px;
+  text-align: center;
+  border-right: 1px solid $sky-blue;
+
+  img{
+    width: 100%;
+  }
+  p{
+    padding-bottom: 5px;
+  }
+}
+
+.cite-quote{
+  height: 333px;
+  padding: 30px 40px;
+  display: flex;
+  text-align: right;
+  align-items: center;
+  h3{
+    padding-right: 30px;
+  }
+}
+
+.budget-impact-trend-chart{
+  height: 333px;
+  padding: 30px;
+  text-align: center;
+  h5{
+    padding-bottom: 10px;
+  }
+  img{
+    width: 90%;
   }
 }
 
