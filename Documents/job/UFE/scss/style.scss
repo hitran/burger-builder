@@ -121,12 +121,12 @@
 
 /* Fact Blue */
 .fact-blue {
-  .row1{
+  .row1 {
     overflow: hidden;
-    .col-md-8{
+    .col-md-8 {
       padding-right: 0;
     }
-    .col-md-4{
+    .col-md-4 {
       padding-left: 0;
     }
   }
@@ -135,29 +135,30 @@
     font-size: 50px;
   }
 
-  .play-button{
+  .play-button {
     @include position(relative, -45px);
   }
 
-  .top-side-banner{
-    img{
+  .top-side-banner {
+    img {
       min-height: 324.10px;
       @include position(relative, -0.9px);
     }
   }
 
-  .seventy-five-percent-fact{
+  .seventy-five-percent-fact {
     padding: 45px;
-    p{
+    height: 686px;
+    p {
       padding-bottom: 5px;
     }
   }
 
-  .arrow-percent{
+  .arrow-percent {
     position: relative;
     margin-bottom: 25px;
 
-    .percentage{
+    .percentage {
       position: absolute;
       top: 15px;
       left: 10px;
@@ -167,105 +168,219 @@
     }
   }
 
-  .industry-contribution{
+  .industry-contribution {
     padding: 30px;
     text-align: center;
     border-right: 1px solid $blue;
-    h5{
+    h5 {
       padding-bottom: 20px;
     }
   }
 
-  .chart-description{
+  .chart-description {
     display: flex;
   }
-  .column-right{
+  .column-right {
     margin-left: 70px;
     margin-top: 5px;
     margin-right: 10px;
     text-align: left;
-    p{
-      padding-bottom: 20px;
-    }
+  }
+  p {
+    padding-bottom: 20px;
   }
 }
 
-.specific-action{
+.specific-action {
   margin-top: 30px;
   padding: 23px;
   display: flex;
   flex-direction: column;
 
-  p{
+  p {
     padding-top: 10px;
     padding-bottom: 0;
   }
 
-  .column-left, .column-right{
+  .column-left, .column-right {
     flex: 1;
   }
 
-  .column-top{
+  .column-top {
     padding: 5px;
     margin: 0;
     display: flex;
   }
 
-  .column-bottom{
+  .column-bottom {
     padding: 5px;
     display: flex;
   }
 
-  h5::before{
+  h5::before {
     content: "> ";
     font-weight: normal;
     line-height: 30px;
   }
 }
+
+.financial-fact {
+  padding: 30px;
+  border-left: 1px solid $blue;
+  height: 362px;
+
+  .description {
+    position: relative;
+    height: 237px;
+  }
+
+  .border-radius-top {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .border-radius-bottom {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+
+  .description-detail {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 30px;
+    z-index: 1;
+  }
+
+}
+
+.money-pocket-img {
+  position: relative;
+  display: inline-block;
+  left: 30px;
+  top: 20px;
+
+  .euro-sign {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+
+  }
+}
+
+.ten-actions-bar-chart {
+  @extend %flex-center;
+  flex-direction: column;
+  padding: 33px 0;
+  border-right: 1px solid $blue;
+
+  .chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 98%;
+    p{
+      padding-bottom: 0;
+      padding-top: 10px;
+    }
+    .column-right{
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .column-left{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+.ten-actions-diagram{
+  text-align: center;
+  padding: 10px 30px;
+  h5{
+    padding-bottom: 20px;
+  }
+
+  img{
+    width: 100%;
+  }
+}
+
+.fact-blue{
+  .bottom-side-banner{
+    position: relative;
+    img{
+      width: 100%;
+    }
+
+    .description{
+      position: absolute;
+      bottom: 0;
+      text-align: center;
+      width: 100%;
+      h3{
+        font-size: 40px;
+        color: $blue;
+      }
+      p{
+        padding-bottom: 10px;
+      }
+    }
+  }
+}
+
 /* Fact Marble*/
-.fact-marble{
-  .conclusion{
+.fact-marble {
+  .conclusion {
     align-items: flex-end;
   }
 
-  .column-left{
+  .column-left {
     margin-top: 50px;
     align-self: flex-start;
   }
 
-  .column-right{
-    h2{
+  .column-right {
+    h2 {
       margin-bottom: 30px;
     }
   }
 }
 
 /* Fact Sky Blue */
-.fact-sky-blue{
-  .conclusion{
+.fact-sky-blue {
+  .conclusion {
     align-items: flex-start;
     padding-top: 70px;
   }
 
-  .column-right{
-    h3{
+  .column-right {
+    h3 {
       margin-bottom: 30px;
     }
   }
 }
 
 /* Fact Orange */
-.fact-orange{
-  .conclusion{
+.fact-orange {
+  .conclusion {
     position: relative;
   }
-  .leaf{
+  .leaf {
     position: absolute;
     right: 20px;
     bottom: 20px;
   }
 }
-
 
 /* Footer */
 footer {
