@@ -7,18 +7,12 @@
 .header-top {
   @include general-style(transparent, $green);
   margin-top: 20px;
-
   .row {
     @extend %flex-center;
   }
-
   .page-title {
     text-align: center;
     padding-right: 42px;
-  }
-
-  .logo-wrapper {
-    padding-left: 25px;
   }
 }
 
@@ -27,18 +21,28 @@
   @extend %transparent;
   margin-top: 20px;
   font-size: 14px;
-
   li {
     border-right: 1px solid $green;
     &:last-child {
       border-right: none;
+      a {
+        padding-right: 0;
+      }
+    }
+    &:first-child {
+      a {
+        padding-left: 0;
+      }
     }
     a {
-      @include space(4px, 10px);
+      @include space(4px, 17px);
     }
   }
   .navbar-nav > .active > a {
     @include general-style(transparent, $green);
+    &:hover {
+      background: none;
+    }
   }
 }
 
@@ -50,13 +54,13 @@
 .overall-conclusion-row {
   @extend %flex-center;
   height: 198px;
-
   .column-left {
     @extend %flex-center;
     img {
       @include position(relative, 0, 0, 0, -6px);
-      height: 35px;
+      height: 33px;
       padding-right: 10px;
+      width: 40px;
     }
   }
 
@@ -74,21 +78,17 @@
     }
   }
   .column-left {
-    @include position(relative, -55px);
+    @include position (relative, -55px);
   }
-
   .top-side-banner {
     width: 100%;
   }
-
   .one-transition, .one-role {
     min-height: 333px;
   }
-
   .graph, .one-transition, .one-role {
     padding: 33px;
   }
-
   .graph {
     border-right: 1px solid $green;
     text-align: center;
@@ -99,19 +99,16 @@
       margin-bottom: 33px;
     }
   }
-
   .one-transition {
     h3 {
       margin-bottom: 33px;
     }
   }
-
   .one-role {
     h3 {
       margin-top: 33px;
     }
   }
-
   .content-wrapper {
     @extend %flex-center;
     flex-direction: column;
@@ -130,22 +127,18 @@
       padding-left: 0;
     }
   }
-
   .title {
     font-size: 50px;
   }
-
   .play-button {
     @include position(relative, -45px);
   }
-
   .top-side-banner {
     img {
       min-height: 324.10px;
       @include position(relative, -0.9px);
     }
   }
-
   .seventy-five-percent-fact {
     padding: 45px;
     height: 686px;
@@ -153,11 +146,9 @@
       padding-bottom: 5px;
     }
   }
-
   .arrow-percent {
     position: relative;
     margin-bottom: 25px;
-
     .percentage {
       position: absolute;
       top: 15px;
@@ -167,7 +158,6 @@
       font-weight: bold;
     }
   }
-
   .industry-contribution {
     padding: 30px;
     text-align: center;
@@ -176,7 +166,6 @@
       padding-bottom: 20px;
     }
   }
-
   .chart-description {
     display: flex;
   }
@@ -196,27 +185,22 @@
   padding: 23px;
   display: flex;
   flex-direction: column;
-
   p {
     padding-top: 10px;
     padding-bottom: 0;
   }
-
   .column-left, .column-right {
     flex: 1;
   }
-
   .column-top {
     padding: 5px;
     margin: 0;
     display: flex;
   }
-
   .column-bottom {
     padding: 5px;
     display: flex;
   }
-
   h5::before {
     content: "> ";
     font-weight: normal;
@@ -228,24 +212,20 @@
   padding: 30px;
   border-left: 1px solid $blue;
   height: 362px;
-
   .description {
     position: relative;
     height: 237px;
   }
-
   .border-radius-top {
     position: absolute;
     right: 0;
     top: 0;
   }
-
   .border-radius-bottom {
     position: absolute;
     left: 0;
     bottom: 0;
   }
-
   .description-detail {
     position: absolute;
     top: 50%;
@@ -253,7 +233,6 @@
     padding: 0 30px;
     z-index: 1;
   }
-
 }
 
 .money-pocket-img {
@@ -261,7 +240,6 @@
   display: inline-block;
   left: 30px;
   top: 20px;
-
   .euro-sign {
     display: inline-block;
     color: white;
@@ -269,7 +247,6 @@
     position: absolute;
     top: 30px;
     left: 15px;
-
   }
 }
 
@@ -394,18 +371,15 @@
   padding: 30px 35px;
   border-right: 1px solid $marble;
   height: 719px;
-
   img {
     width: 100%;
   }
   h3, h5 {
     padding-bottom: 30px;
   }
-
   h5 {
     text-align: center;
   }
-
   p {
     padding-top: 30px;
   }
@@ -482,61 +456,59 @@
 }
 
 .fact-sky-blue {
-  .middle-side-banner{
+  .middle-side-banner {
     height: 333px;
     overflow: hidden;
     position: relative;
     width: 100%;
-    img{
+    img {
       width: 100%;
       position: relative;
       top: -60px;
     }
-    h3{
+    h3 {
       position: absolute;
       top: 30px;
       text-align: center;
       width: 40%;
       left: 50%;
       transform: translateX(-50%);
-
     }
   }
 }
 
-.electric-car-impact-chart{
+.electric-car-impact-chart {
   height: 333px;
   padding: 30px;
   text-align: center;
   border-right: 1px solid $sky-blue;
-
-  img{
+  img {
     width: 100%;
   }
-  p{
+  p {
     padding-bottom: 5px;
   }
 }
 
-.cite-quote{
+.cite-quote {
   height: 333px;
   padding: 30px 40px;
   display: flex;
   text-align: right;
   align-items: center;
-  h3{
+  h3 {
     padding-right: 30px;
   }
 }
 
-.budget-impact-trend-chart{
+.budget-impact-trend-chart {
   height: 333px;
   padding: 30px;
   text-align: center;
-  h5{
+  h5 {
     padding-bottom: 10px;
   }
-  img{
+  img {
     width: 90%;
   }
 }
@@ -551,13 +523,13 @@
     right: 20px;
     bottom: 20px;
   }
-  .middle-side-banner{
+  .middle-side-banner {
     height: 333px;
     overflow: hidden;
     position: relative;
     margin-bottom: 30px;
   }
-  .banner-description{
+  .banner-description {
     position: absolute;
     left: 20px;
     top: 20px;
@@ -569,35 +541,35 @@
   }
 }
 
-.CO2-result{
+.CO2-result {
   margin-bottom: 30px;
   height: 333px;
   display: flex;
   padding-left: 70px;
   align-items: center;
-  h3{
+  h3 {
     width: 55%;
   }
 }
 
-.distribution-channel-chart{
+.distribution-channel-chart {
   height: 333px;
   text-align: center;
   padding: 20px;
   border-left: 1px solid $orange;
-  h5{
+  h5 {
     margin-bottom: 20px;
   }
 }
 
-.job-prediction-fact{
+.job-prediction-fact {
   padding: 30px 45px;
   height: 1059px;
   overflow: scroll;
-  h3{
+  h3 {
     margin-bottom: 20px;
   }
-  p{
+  p {
     color: black;
     margin-bottom: 20px;
     text-align: justify;
@@ -607,6 +579,7 @@
 /* Footer */
 footer {
   color: $gray;
+  padding-bottom: 30px;
   .fa {
     border: 1px solid $gray;
     font-size: 25px;
@@ -617,6 +590,7 @@ footer {
 .contact {
   display: flex;
   justify-content: flex-end;
+  padding-right: 15px;
 }
 
 .mention, .email {
