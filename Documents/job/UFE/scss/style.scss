@@ -551,6 +551,57 @@
     right: 20px;
     bottom: 20px;
   }
+  .middle-side-banner{
+    height: 333px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .banner-description{
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 334px;
+    height: 292px;
+    padding-top: 40px;
+    padding-left: 20px;
+    color: $dark-orange;
+  }
+}
+
+.CO2-result{
+  margin-bottom: 30px;
+  height: 333px;
+  display: flex;
+  padding-left: 70px;
+  align-items: center;
+  h3{
+    width: 55%;
+  }
+}
+
+.distribution-channel-chart{
+  height: 333px;
+  text-align: center;
+  padding: 20px;
+  border-left: 1px solid $orange;
+  h5{
+    margin-bottom: 20px;
+  }
+}
+
+.job-prediction-fact{
+  padding: 30px 45px;
+  height: 1059px;
+  overflow: scroll;
+  h3{
+    margin-bottom: 20px;
+  }
+  p{
+    color: black;
+    margin-bottom: 20px;
+    text-align: justify;
+  }
 }
 
 /* Footer */
